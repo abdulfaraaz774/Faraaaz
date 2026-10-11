@@ -1,2 +1,2 @@
-# Faraaaz
+# Faraaz
 Faraaz_Resume
