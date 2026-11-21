@@ -1,0 +1,13 @@
+{
+  "name": "SBK Facility Ops",
+  "short_name": "SBK Ops",
+  "description": "SBK Real Estate — attendance, bin disposal, DEWA meter readings and security patrol",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F3F5F9",
+  "theme_color": "#13294B",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

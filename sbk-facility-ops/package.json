@@ -1,0 +1,18 @@
+{
+  "name": "sbk-facility-ops",
+  "version": "1.0.0",
+  "description": "SBK Real Estate facility operations: attendance, bin disposal, DEWA meter readings, security patrol",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  }
+}
