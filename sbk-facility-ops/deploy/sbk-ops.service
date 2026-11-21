@@ -1,0 +1,18 @@
+# systemd unit for running without Docker.
+# sudo cp deploy/sbk-ops.service /etc/systemd/system/ && sudo systemctl enable --now sbk-ops
+[Unit]
+Description=SBK Facility Ops
+After=network.target
+
+[Service]
+Type=simple
+User=sbkops
+WorkingDirectory=/opt/sbk-facility-ops
+EnvironmentFile=/opt/sbk-facility-ops/.env
+Environment=NODE_ENV=production PORT=3000 HOST=127.0.0.1 DATA_DIR=/var/lib/sbk-ops
+ExecStart=/usr/bin/node --disable-warning=ExperimentalWarning server.js
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
